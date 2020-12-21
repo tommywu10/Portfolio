@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Tommy Wu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header> 
+        <div class='logo'>
+            <p>tommy wu</p>
+            <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger">burger</span>
+        </div>
+        
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, I am <strong>Tommy Wu</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+        <img src='./headshot.jpg' alt='A picture of Tommy Wu' class="intro__img"/>
+    </section>
+
+    <!-- Services -->
+    <section class="my-services" id='services'>
+        <h2 class="section__title section__title--services">What I Do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design and Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="service">
+                <h3>E-commerce</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="service">
+                <h3>Wordpress</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <a href="work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel fugit quos quam provident ipsa sint architecto distinctio neque, ab, modi sequi excepturi at culpa natus! Nisi velit eveniet inventore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, laborum adipisci sunt minima perspiciatis incidunt excepturi voluptatem porro nulla! Neque, earum. Excepturi alias odit nostrum sunt est vero odio similique.</p>
+        </div>
+
+        <img src="./bass-headshot.jpg" alt="Picture of Tommy and his bass">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id='work'>
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="./teaching.jpg" alt="Tommy teaching students" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="./teaching.jpg" alt="Tommy teaching students" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="./teaching.jpg" alt="Tommy teaching students" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="./teaching.jpg" alt="Tommy teaching students" class="portfolio__img">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="mailto:tomwu10@gmail.com" class="footer-link">tomwu10@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#">A</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">B</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">C</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#">D</a></li>
+           
+        </ul>
+    </footer>
+</body>
+</html>
