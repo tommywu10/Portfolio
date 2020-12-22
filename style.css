@@ -167,15 +167,39 @@ header {
     width: calc(100% + 2.5em);
 }
 
+
+/* ---------------WHAT I DO ------------------------- */
 .my-services {
     background-image: url("./my-services-background-img.jpg");
     background-size: cover;
     background-color: #474747;
     background-blend-mode:multiply ;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px ;
 }
 
-.service, .section__title--services  {
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title--services {
+    color: #16e0bd;
+}
+
+.service {
+    width: 25%;
+    padding: 15px;
+}
+
+
+.service  {
     color: #fff;
 }
 
@@ -183,6 +207,18 @@ header {
     width: 30%;
 }
 
+.btn {
+    text-decoration: none;
+    background-color: #16e0bd;
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    width: 150px;
+    text-align: center;
+    color: black;
+    letter-spacing: 1.5px;
+}
 
 /* -----------ABOUT ME -------------- */
 
@@ -192,34 +228,43 @@ header {
     margin: 0 auto;
     grid-template-areas: 
         ". title title"
-        "img . body"
-        "img . body"
-        "subtitle subtitle .";
-    grid-template-columns: 300px 200px 300px;
-    grid-template-rows: 130px 200px 50px 100px;
+        "subtitle img ."
+        ". img body"
+        ;
+    grid-template-columns: 50px 300px 630px;
+    grid-template-rows: 100px 75px 200px;
     justify-content: center;
+    gap: 20px;
 }
 
 
 
 .section__title--about {
     grid-area: title;
+    position: relative;
+    left: 20px;
 }
 
 .section__subtitle--about {
     grid-area: subtitle;
     position: relative;
-    left: -40px;
+    text-align: right;
+    grid-column: 1 / 4;
 }
 
 .about-me__body {
     grid-area: body;
+    position: relative;
+    bottom: 30px;
 }
 
 .about-me img {
     grid-row: img;
     z-index: 2;
     box-shadow: var(--bs);
+    grid-column: 2 / 3;
+    position: relative;
+    bottom: 30px;
 }
 
 
