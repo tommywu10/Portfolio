@@ -456,6 +456,11 @@ footer a {
 
 }
 
+footer a:hover {
+    color: #fff;
+    transition: ease .65s;
+}
+
 .social-media-buttons {
     display: flex;
     justify-content: center;
