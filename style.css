@@ -231,6 +231,7 @@ header {
     box-shadow: var(--bs);
 }
 
+
 .section__subtitle--intro {
     display: inline-block;
 }
@@ -245,6 +246,13 @@ header {
         "img title"
         "img subtitle";
     grid-template-columns: min-content max-content;
+}
+
+.section__title--intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro__img {
