@@ -10,3 +10,13 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+//------------------------------------------------------------------
+
+/* const portfolioItem1 = document.querySelector('.portfolio__item-1')
+
+portfolioItem1.addEventListener('mouseover', () => {
+    const text = "My Musician Website"
+    portfolioItem1.innerHTML = text;
+
+}) */
