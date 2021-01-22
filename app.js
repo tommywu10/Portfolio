@@ -14,9 +14,19 @@ navLinks.forEach(link => {
 //------------------------------------------------------------------
 
 /* const portfolioItem1 = document.querySelector('.portfolio__item-1')
+const portfolioLinkText = document.getElementById('portfolio_link_text')
 
 portfolioItem1.addEventListener('mouseover', () => {
-    const text = "My Musician Website"
-    portfolioItem1.innerHTML = text;
 
-}) */
+    portfolioLinkText.style.display = 'block';
+    portfolioLinkText.style.transition = 'ease .8s';
+    
+})
+
+portfolioItem1.addEventListener('mouseout', () => {
+
+    portfolioLinkText.style.display = 'none';
+})
+
+
+ */
