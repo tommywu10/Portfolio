@@ -324,6 +324,11 @@ header {
     text-align: center;
     color: black;
     letter-spacing: 1.5px;
+    transition: ease-in-out .4s;
+}
+
+.btn:hover {
+    color: white;
 }
 
 /* -----------ABOUT ME -------------- */
@@ -432,13 +437,14 @@ header {
 
 
 #portfolio_link_text {
-    display: none;
+    opacity: 0;
     position: absolute;
+    transition: all ease-in-out .3s;
 }
 
 .portfolio a:hover  #portfolio_link_text {
-    display: block;
     color: white;
+    opacity: 1;
     
     
 }
