@@ -436,13 +436,23 @@ header {
 
 
 
-#portfolio_link_text {
+.portfolio_link_text {
     opacity: 0;
     position: absolute;
     transition: all ease-in-out .3s;
 }
 
-.portfolio a:hover  #portfolio_link_text {
+.portfolio_link_text p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.portfolio_link_text:hover {
+    color: #fff;
+}
+
+.portfolio a:hover  .portfolio_link_text {
     color: white;
     opacity: 1;
     
