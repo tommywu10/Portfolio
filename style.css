@@ -273,7 +273,7 @@ header {
 }
 
 
-/* ---------------WHAT I DO ------------------------- */
+/* ---------------SERVICES------------------------- */
 .my-services {
     background-image: url("./my-services-background-img.jpg");
     background-size: cover;
@@ -285,7 +285,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 600px ;
-    
+    width: 100%;
 }
 
 .services {
@@ -335,7 +335,7 @@ header {
 
 .about-me {
     display: grid;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     grid-template-areas: 
         ". title title"
@@ -353,7 +353,7 @@ header {
 .section__title--about {
     grid-area: title;
     position: relative;
-    left: 20px;
+    margin-left: 25px;
 }
 
 .section__subtitle--about {
@@ -487,7 +487,7 @@ footer {
 
 footer a {
     text-decoration: none;
-
+    
 }
 
 footer a:hover {
@@ -499,11 +499,71 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
 }
 
 .social-media-buttons a {
     font-size: 30px;
-    width: 50px;
+    margin: 20px;
     color: #16e0bd;
+}
+
+@media (max-width: 1000px) {
+    .my-services {
+        height: 100%;
+        padding: 20px;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service {
+        width: 60%;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .section__subtitle--about {
+        text-align: left;
+    }
+
+    .about-me img {
+        min-width: 60%;
+    }
+
+    .my-work {
+        padding: 40px;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio_link_text {
+        opacity: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        bottom: 1px;
+        color: white;
+    }
+
+    .portfolio__item img{
+        opacity: .4;
+    }
+    
 }
