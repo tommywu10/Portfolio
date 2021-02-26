@@ -117,6 +117,7 @@ header {
 
 .logo button {
     height: 40px;
+
 }
 
 
@@ -190,7 +191,7 @@ header {
     top: 1em;
     z-index: 1000;
     outline: none;
-    
+    margin-top: 12px;
 }
 
 .hamburger {
@@ -229,6 +230,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    width: 20%;
 }
 
 
@@ -567,4 +569,46 @@ footer a:hover {
         opacity: .4;
     }
     
+}
+
+@media (max-width: 480px){
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro__img {
+        width: 20%;
+    }
+
+    .section__title--intro {
+        margin-bottom: 20px;
+    }
+
+    .section__subtitle--intro {
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .portfolio__item {
+        border-bottom: 1px solid white;
+    }
+
+    .portfolio_link_text {
+        flex-direction: column;
+        margin: auto 0;
+        bottom: 50%;
+        top: 50%;
+    }
+
+    footer { 
+        height: 200px;
+    }
 }
