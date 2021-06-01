@@ -17,7 +17,7 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: cyan;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -115,14 +115,9 @@ header {
     color: var(--clr-dark);
 }
 
-.logo button {
-    height: 40px;
-
-}
-
-
-.logo p {
-    font-family: var(--ff-secondary);
+.logo img {
+    width: 80px;
+    margin: 13px 0 ;
 }
 
 .nav {
