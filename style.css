@@ -508,7 +508,7 @@ footer a:hover {
 @media (max-width: 1000px) {
     .my-services {
         height: 100%;
-        padding: 20px;
+        padding: 40px;
     }
 
     .services {
